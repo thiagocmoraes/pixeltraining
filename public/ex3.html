@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Product Details | E-Shopper</title>
+    <title>Product Details | ViewContent</title>
     <link href="https://tmoraes.parseapp.com/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://tmoraes.parseapp.com/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://tmoraes.parseapp.com/css/prettyPhoto.css" rel="stylesheet">
@@ -22,6 +22,24 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://tmoraes.parseapp.com/images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://tmoraes.parseapp.com/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="https://tmoraes.parseapp.com/images/ico/apple-touch-icon-57-precomposed.png">
+
+    <link href="modal.css" rel="stylesheet">
+    <script src="https://tmoraes.parseapp.com/js/jquery.js"></script>
+    <script src="modal.js"></script>
+		<script>
+
+			$(document).ready(function() {
+				var title = 'DPA Time!';
+				var instructions = [
+					'Fire the ViewContent event passing the product ID',
+					'Check the docs to see the required parameters',
+					'Make sure the ID matches according to Pixel Helper',
+				];
+				var footer = 'ATTENTION: In this case, use pixel ID 111111111111111';
+				setInstructions(title, instructions, footer);
+			});
+		</script>
+
 </head><!--/head-->
 
 <body>
