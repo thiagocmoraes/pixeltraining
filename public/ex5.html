@@ -38,6 +38,13 @@
         setInstructions(title, instructions, footer);
       });
     </script>
+
+    <script>
+      var subscribeToNewsletter = function(event) {
+        event.preventDefault();
+        $('.status.alert.alert-success').show();
+      };
+    </script>
 </head><!--/head-->
 
 <body>
@@ -169,7 +176,7 @@
             <form id="main-contact-form" class="contact-form row" name="contact-form" method="post" href="#">
                   <div class="form-group col-md-4">
                       <input type="email" name="email" class="form-control" required="required" placeholder="Email">
-                      <input type="submit" name="submit" class="btn btn-primary pull-right" value="Submit">
+                      <input type="submit" name="submit" class="btn btn-primary pull-right" value="Submit" onclick="subscribeToNewsletter(event)">
                   </div>
               </form>
           </div>
